@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouwspel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar voor blokken en knoppen -->
+    <div class="sidebar">
+      <h2>Blokken</h2>
+      <div class="blocks">
+        <div class="block" id="grass"></div>
+        <div class="block" id="stone"></div>
+        <div class="block" id="wood"></div>
+        <div class="block" id="brick"></div> <!-- Nieuw blok -->
+      </div>
+      
+      <h3>Tools</h3>
+      <button id="expandField">Vergroot Grond</button>
+      <button id="enableEraser">Gum Activeren</button> <!-- Gum knop -->
+    </div>
+
+    <!-- Leeg veld om blokken te plaatsen -->
+    <div class="game-area" id="game-area">
+      <!-- Hier worden de blokken geplaatst -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
