@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#grass {
+  background-color: #7CFC00; /* Grasblok */
+}
+
+#stone {
+  background-color: #808080; /* Steenblok */
+}
+
+#wood {
+  background-color: #8B4513; /* Houten blok */
+}
+
+#brick {
+  background-color: #B22222; /* Baksteenblok */
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.game-area {
+  width: 600px;
+  height: 400px;
+  background-color: #d3d3d3;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2px;
+}
+
+.game-area div {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+
+.game-area .block-placed {
+  border: none;
+}
+
+.selected {
+  border: 3px solid #00f;
+}
